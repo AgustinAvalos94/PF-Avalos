@@ -203,25 +203,10 @@ ul li img{
 
     } 
 
-    .tienda{
-        background-color: blue;
-        
-    }
-    
-    .tienda .filtro{
-        grid-area: filtro;
-        background-color: brown;
-    }
-        .tienda .filtro form{
-    
-        }
-    
-    .tienda .actions{
-       
-    }
+   
         
         .tienda figure{
-            background-color: brown;
+            
             width: 100%;
             height: 100%;
             display: flex;
@@ -235,9 +220,8 @@ ul li img{
         }
     
             .tienda figure img{
-                border: solid 1px grey;
+                border: none;
                 width:70%;
-                padding-top: 10px;
                 margin: 20px auto;
                            
     
@@ -245,14 +229,15 @@ ul li img{
     
             .tienda figure p{
                 width: 80%;
-                margin: auto;
-                margin-top: 10px;
-                font-size: 1em;
+                margin: 5px auto;
+              
+                font-size: 0.75em;
             }
     
             .tienda figure button{
                 width: 60%;
                 margin: auto;
+                font-family: 'Roboto', sans-serif;
                 font-size: 1.1em;
                 margin-top: 10px;
                 margin-bottom: 20px;
@@ -265,7 +250,7 @@ ul li img{
             .tienda figure figcaption{
                 font-family: 'Roboto', sans-serif;
                 text-align: center;           
-                font-size: 1.5em;
+                font-size: 1.20em;
             }
     
     
