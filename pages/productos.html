@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"><!--El iconito de la pestaña-->
+    <!--href es la ruta del icono, agregale img/favicon.png, pero ponele el nombre favicon al logo-->
+    <title>Ropa Tecnica de Montaña</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <nav>
+        <!--Vinculos relativos/ los que te envían dentro de tu página-->
+        <a href="../index.html"><!--href es el atributo que indica a donde te manda la etiqueta-->
+            <img class="logo" src="../img/logo.png" alt="Logo de Ropa técnica de Montaña"><!--src es donde está el archivo, alt es el texto alternativo (si la imagen no se carga, gente no vidente, google cuando rastrea contenido)-->     
+        </a>
+        <ul><!--Listas desordenadas-->
+            <li>
+                <a href="productos.html">Productos</a> <!--es un vínculo, el # es para reservar un vínculo-->
+            </li> <!--elementos de lista-->
+            <li>
+                <a href="tecnologias.html">Tecnologías</a>
+            </li>
+            <li>
+                <a href="consultas.html">Consultas</a>
+            </li>
+            <li>
+                <a href="nosotros.html">Nosotros</a>
+            </li>
+        </ul>
+    </nav>
+    <header><!--REVISAR SI ACA EL HEADER FUNCIONARIA PARA TU PAGINA-->
+        <h1>La mejor calidad en ropa técnica de montaña</h1>
+        <h2>Conocé nuestros mejores productos</h2>
+    </header>
+
+    <div class="container-fluid text-center">
+
+ 
+    </div>
+
+    <main class="container-fluid text-center ">
+        <!--BARRA DE ACCIONES-->
+        <div class="row">
+            <div class="col-6 col-lg-12">
+                <div class="actions">
+                    <form action="">
+                        <input type="text" placeholder="buscar">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </svg>
+                        </button>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                              </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        <!--END BARRA DE ACCIONES-->
+
+        <!--FILTRO-->
+            <div class="col-6 col-lg-2">
+                <div class="filtro">
+                    <form>
+                        <select name="Género">
+                            <option value="hombre">Hombre</option>
+                            <option value="mujer">Mujer</option>
+                        </select>
+                        <select name="Tipo de Producto">
+                            <option value="calzado">Calzado</option>
+                            <option value="pantalones">Pantalones</option>
+                            <option value="remeras">Remeras</option>
+                            <option value="buzos">Buzos</option>
+                            <option value="camperas">Camperas</option>
+                            <option value="accesorios">Accesorio</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                        <select name="Actividad">
+                            <option value="hiking">Hiking</option>
+                            <option value="climbing">Climbing</option>
+                            <option value="camping">Camping</option>
+                            <option value="ski">Ski</option>
+                        </select>
+                        <select name="Otros">
+                            <option value="ofertas">Ofertas</option>
+                            <option value="novedades">Novedades</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            <!--END FILTRO-->
+
+            <!--PRODUCTOS-->
+            <div class="col-12 col-md-6 col-lg-3 ms-auto">
+                <figure>
+                    <img src="#" alt="Buzo Micropolar">
+                    <figcaption>Buzo Micropolar</figcaption>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio maiores saepe sit exercitationem necessitatibus, corporis deserunt facere. Animi, numquam! Hic, sit consequuntur quas voluptatum eius aliquam tempore dolorem. Ipsam, nihil.</p>
+                    <button>+ Agregar al carrito</button>
+                </figure>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 ms-auto">
+                <figure>
+                    <img src="#" alt="Campera Softshell">
+                    <figcaption>Campera Softshell</figcaption>
+                    <p>Lorem ipsum dolor sit amet consectet  ur adipisicing elit. Distinctio maiores saepe sit exercitationem necessitatibus, corporis deserunt facere. Animi, numquam! Hic, sit consequuntur quas voluptatum eius aliquam tempore dolorem. Ipsam, nihil.</p>
+                    <button>+ Agregar al carrito</button>
+                </figure>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 ms-auto">
+                <figure>
+                    <img src="#" alt="Botas Senderismo">
+                    <figcaption>Botas Senderismo</figcaption>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio maiores saepe sit exercitationem necessitatibus, corporis deserunt facere. Animi, numquam! Hic, sit consequuntur quas voluptatum eius aliquam tempore dolorem. Ipsam, nihil.</p>
+                    <button>+ Agregar al carrito</button>
+                </figure>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 ms-auto">
+                <figure>
+                    <img src="#" alt="Carpa 4 estaciones">
+                    <figcaption>Carpa 4 estaciones</figcaption>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio maiores saepe sit exercitationem necessitatibus, corporis deserunt facere. Animi, numquam! Hic, sit consequuntur quas voluptatum eius aliquam tempore dolorem. Ipsam, nihil.</p>
+                    <button>+ Agregar al carrito</button>
+                </figure> 
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 -auto">
+                <figure>
+                    <img src="#" alt="Crampones">
+                    <figcaption>Crampones</figcaption>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio maiores saepe sit exercitationem necessitatibus, corporis deserunt facere. Animi, numquam! Hic, sit consequuntur quas voluptatum eius aliquam tempore dolorem. Ipsam, nihil.</p>
+                    <button>+ Agregar al carrito</button>
+                </figure>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 -auto">
+                <figure>
+                    <img src="#" alt="Remera Secado Rapido">
+                    <figcaption>Remera Secado Rapido</figcaption>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio maiores saepe sit exercitationem necessitatibus, corporis deserunt facere. Animi, numquam! Hic, sit consequuntur quas voluptatum eius aliquam tempore dolorem. Ipsam, nihil.</p>
+                    <button>+ Agregar al carrito</button>
+                </figure>
+            </div>
+        </div>
+    <!--END PRODUCTOS-->
+    </main>
+
+    
+    <footer id="lista-hor"><!--Acá puedo tener por ejemplo, vínculos a las redes sociales, los cuales seran vínculos absolutos-->
+        <h3>Seguinos en nuestras redes!!</h3>
+        <ul>
+            <li>
+                <a href="https://www.instragram.com/" target="_blank">
+                    <img src="../img/IG.png" alt="Seguinos en IG">
+                </a>   
+            </li>
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="../img/FB.png" alt="Seguinos en FB">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/" target="_blank">
+                    <img src="../img/TW.png" alt="Seguinos en TW">
+                </a>
+            </li>
+        </ul>        
+    </footer>
+    
+</body>
+</html>

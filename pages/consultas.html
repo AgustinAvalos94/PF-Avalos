@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"><!--El iconito de la pestaña-->
+    <!--href es la ruta del icono, agregale img/favicon.png, pero ponele el nombre favicon al logo-->
+    <title>Ropa Tecnica de Montaña</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav>
+        <!--Vinculos relativos/ los que te envían dentro de tu página-->
+        <a href="../index.html"><!--href es el atributo que indica a donde te manda la etiqueta-->
+            <img class="logo" src="../img/logo.png" alt="Logo de Ropa técnica de Montaña"><!--src es donde está el archivo, alt es el texto alternativo (si la imagen no se carga, gente no vidente, google cuando rastrea contenido)-->     
+        </a>
+        <ul><!--Listas desordenadas-->
+            <li>
+                <a href="productos.html">Productos</a> <!--es un vínculo, el # es para reservar un vínculo-->
+            </li> <!--elementos de lista-->
+            <li>
+                <a href="tecnologias.html">Tecnologías</a>
+            </li>
+            <li>
+                <a href="consultas.html">Consultas</a>
+            </li>
+            <li>
+                <a href="nosotros.html">Nosotros</a>
+            </li>
+        </ul>
+    </nav>
+   
+    <main>
+        <h1>Ante cualquier duda o inquietud no dudes en consultarnos!!</h1>
+        <form class="formulario" action="envio.php">
+            <!--Son todas etiquetas de línea, mientras haya lugar se acomodan una al lado del otro-->
+            <div>
+                <label for="name">Nombre</label>
+                <input type="text" id="name"> <!-- el id me va a iluminar el box de input cuando paso el mouse por el label-->
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="text" id="email">
+            </div>
+            <div>
+                <label for="tel">Teléfono</label>
+                <input type="tel" id="mobile"> <!-- type tel sirve para mobile, porque te cambia el teclado a numerico-->
+            </div>
+            <label for="mensaje">Contanos cual es tu inquietud </label>
+            <div>
+                <br>
+                <textarea name="" id="" cols="100" rows="10"></textarea>
+            </div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Cancelar">
+        </form>
+    
+    </main>
+    <footer id="lista-hor"><!--Acá puedo tener por ejemplo, vínculos a las redes sociales, los cuales seran vínculos absolutos-->
+        <h3>Seguinos en nuestras redes!!</h3>
+        <ul>
+            <li>
+                <a href="https://www.instragram.com/" target="_blank">
+                    <img src="../img/IG.png" alt="Seguinos en IG">
+                </a>   
+            </li>
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="../img/FB.png" alt="Seguinos en FB">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/" target="_blank">
+                    <img src="../img/TW.png" alt="Seguinos en TW">
+                </a>
+            </li>
+        </ul>        
+    </footer>
+    
+</body>
+</html>

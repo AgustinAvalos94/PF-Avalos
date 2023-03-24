@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+/*Selectores de etiqueta*/
+
+h1,h2,h3,a{
+    font-family:'Roboto', sans-serif;
+    text-shadow: 2px 2px rgb(126, 122, 122);
+    padding:0;/* le saco el padding y el margin con el que vienen por defecto*/
+    margin-top: 10px;
+}
+
+
+
+h1{
+    font-size: 3em; /*es una unidad relativa a tu pantalla.. aprox 16 px*/
+    padding: 30px 0px 20px 40px;
+
+}
+h2{
+    font-size: 2em;
+}
+
+p{
+    font-size: 1em;
+}
+
+header{
+    background-image: url(../img/header.jpg);
+    height:320px;
+}
+/*EJEMPLO DE CASCADA -CASCADE STYLING SHEET*/
+nav{
+    background-color: rgba(7, 40, 129, 0.781);
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+    nav ul li{/*la ul que está dentro de la nav, que es hija de la nav*/
+        list-style: none; /*sin bullets*/
+        border: none;
+        padding: 10px 20px 10px 20px;
+        display: inline-block;/*como se muestra el elemento*/
+        /*font-size: 2.5em;*/
+        text-decoration: none;
+        
+    }
+        nav ul li a{
+            text-decoration:none;
+            color: whitesmoke;
+        }
+    
+        nav ul li a:hover{/*los vinculos hijos de los elementos de lista hijos de la lista de... */
+            color: steelblue;
+            text-decoration: none;
+            
+        }
+
+/*Selectores de Clase - Para estos selectores, en el html tengo que especificar a que le aplico esta clase*/
+/*El selector de clase, es mas fuerte que el de etiqueta*/
+
+
+
+/*selector de ID - Es para un módulo, un bloque, un área de mayor importancia*/
+
+
+/*BOX model - witdth- height- margin - padding - border*/
+
+.contenedor{
+    width: 70%; /*90 % de la etiqueta que contiene al que le aplico este contenedor*/
+    height: auto;
+    background-color: brown;
+    /*margin:30px 20px 30px 20px; /*definis los 4 márgenes en sentido horario*/ 
+    margin: 20px auto; /*Con el auto centramos elementos de bloque*/
+    padding: 10px 50px 10px 50px;
+    border: solid 2px royalblue;
+    overflow: auto;
+}
+
+
+
+
+.logo {
+    height:100px;
+    width:auto;
+    padding: 10px;
+}
+
+.contenedor_prueba{
+    width: 70%;
+    margin: auto;
+    padding: 10px 0px 10px 0px;
+    background-color: rgba(207, 202, 202, 0.514);
+}
+
+#lista-hor{
+    
+    margin:20px auto;
+    border-bottom: solid 1px gray;
+    border-top: solid 1px gray;
+    background-color: rgba(175, 171, 171, 0.493);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+    #lista-hor ul li img{
+        margin: 0px 10% 0px 0px;
+        height:75px;
+        width:auto;
+
+    }
+
+    #lista-hor ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+
+.tec{
+
+}
+
+    .tec ul li{/*el encabezado queda en el mismo nivel.. Corregir*/
+        list-style: none;
+        font-size: 1.5em;
+        display: flex;
+        flex-direction: row;
+    }
+       
+ul li img{
+    width: 240px;
+    border: none;
+    padding:50px;
+}
+
+.nosotros{
+      text-align: center;
+}
+    .nosotros p{
+        width: 80%;
+        margin: auto;
+        padding: 30px;
+        text-align: justify;
+        
+    }
+    .nosotros img{
+        width: 70%;
+        padding: 20px;
+    }
+    .nosotros div{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        margin: auto;
+        align-content: right;
+        text-align: left;
+    }
+        .nosotros div p{
+            width: auto;
+            
+        }
+        .nosotros div img{
+            width: 40%;
+            
+        }
+
+.formulario{
+    margin: 30px 0px 40px 40px;
+    width: 50%;
+    font-size: 1.5em;
+    font-family:'Roboto', sans-serif;
+    
+}
+    .formulario div{
+        margin: 10px 0 10px 0;
+        display:flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+        .formulario div input{
+            width: 40%;
+            color: black;
+            background-color: white;
+            border: solid 1px black;
+            border-radius: 0;
+            
+        }
+    .formulario input{
+        padding: 10px 20px 10px 20px;
+        border: none;
+        background-color: steelblue;
+        font-size: 1em;
+        color: white;
+        border-radius: 1em;
+
+    } 
+
+    .tienda{
+        display: grid;
+        width: 90%;
+        min-height: 1000px;
+        margin: auto;
+        gap: 1em;
+        grid-template-columns:15% repeat(3, 1fr);
+        grid-template-rows: 5% repeat(2, 45%);
+        grid-template-areas:
+        "actions actions actions actions"
+        "filtro pro_1 pro_2 pro_3"
+        "0 pro_4 pro_5 pro_6";
+        background-color: blue;
+        
+    }
+    
+    .tienda .filtro{
+        grid-area: filtro;
+        background-color: brown;
+    }
+        .tienda .filtro form{
+            display: flex;
+            flex-direction: column;
+    
+        }
+    
+    .tienda .actions{
+        grid-area: actions;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    
+    .producto_1{
+        grid-area: pro_1;
+    }
+    .producto_2{
+        grid-area: pro_2;
+    }
+    .producto_3{
+        grid-area: pro_3;
+    }
+    .producto_4{
+        grid-area: pro_4;
+    }
+    .producto_5{
+        grid-area: pro_5;
+    }
+    .producto_6{
+        grid-area: pro_6;
+    }
+    
+        .tienda figure{
+            background-color: brown;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            margin: auto;
+            flex-direction: column;
+            justify-content: center;
+            text-align: justify;
+            border: solid 1px grey;
+            border-radius: 0.5em;
+            align-self: center;
+        }
+    
+            .tienda figure img{
+                border: solid 1px grey;
+                width:70%;
+                padding-top: 10px;
+                margin: 20px auto;
+                           
+    
+            }
+    
+            .tienda figure p{
+                width: 80%;
+                margin: auto;
+                margin-top: 10px;
+                font-size: 1em;
+            }
+    
+            .tienda figure button{
+                width: 60%;
+                margin: auto;
+                font-size: 1.1em;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                border: none;
+                border-radius: 1em;
+                background-color: steelblue;
+                color: white;
+            }
+    
+            .tienda figure figcaption{
+                font-family: 'Roboto', sans-serif;
+                text-align: center;           
+                font-size: 1.5em;
+            }
+    
+    
+    /*GRIDS DE LANDING Y TIENDA*/
+    
+    .landing{
+        padding-top: 10px;
+        display: grid;
+        width: 70%;
+        height: 800px;
+        margin: auto;
+        grid-template-columns: repeat(2, 25%) 50%;
+        grid-template-rows: 60% repeat(2, 1fr);
+        grid-template-areas: 
+        "hombre mujer ofertas"
+        "hiking climbing novedades"
+        "camping ski novedades ";
+        gap: 5px;
+    
+    }
+        .landing a{
+            font-size: 2em;
+            
+        }
+        .landing div{
+            /*me gustaría una tira gris con alfa 0.45, que se extienda desde ambos lados*/
+        }
+    
+    .landing .hombre{
+        grid-area: hombre;
+        background-image: url(../img/hombre.jpg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .landing .mujer{
+        grid-area: mujer;
+        background-image: url(../img/mujer.jpg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .landing .ofertas{
+        grid-area: ofertas;
+        background-image: url(../img/ofertas.png);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .landing .hiking{
+        grid-area: hiking;
+        background-color: brown;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .landing .climbing{
+        grid-area: climbing;
+        background-color: brown;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .landing .camping{
+        grid-area: camping;
+        background-color: brown;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .landing .ski{
+        grid-area: ski;
+        background-color: brown;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .landing .novedades{
+        grid-area: novedades;
+        background-image: url(../img/novedades.png);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
