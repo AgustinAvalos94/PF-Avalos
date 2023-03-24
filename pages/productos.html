@@ -38,15 +38,11 @@
         <h2>Conocé nuestros mejores productos</h2>
     </header>
 
-    <div class="container-fluid text-center">
-
- 
-    </div>
-
-    <main class="container-fluid text-center ">
+    <!--COMIENZA MAIN-->
+    <main class="container-fluid text-center tienda ">
         <!--BARRA DE ACCIONES-->
-        <div class="row">
-            <div class="col-6 col-lg-12">
+        <div class="row justify-content-end">
+            <div class="col-6 col-lg-12 text-align">
                 <div class="actions">
                     <form action="">
                         <input type="text" placeholder="buscar">
@@ -64,16 +60,18 @@
                 </div>
             </div>
         <!--END BARRA DE ACCIONES-->
-
         <!--FILTRO-->
-            <div class="col-6 col-lg-2">
+            <div class="col-6 col-lg-3">
                 <div class="filtro">
+                    
                     <form>
-                        <select name="Género">
+                        <select class="form-select" name="Género">
+                            <option selected disabled>Género</option>
                             <option value="hombre">Hombre</option>
                             <option value="mujer">Mujer</option>
                         </select>
-                        <select name="Tipo de Producto">
+                        <select class="form-select" name="Tipo de Producto">
+                            <option selected disabled>Tipo de Producto</option>
                             <option value="calzado">Calzado</option>
                             <option value="pantalones">Pantalones</option>
                             <option value="remeras">Remeras</option>
@@ -82,13 +80,16 @@
                             <option value="accesorios">Accesorio</option>
                             <option value="otros">Otros</option>
                         </select>
-                        <select name="Actividad">
-                            <option value="hiking">Hiking</option>
+                        <select class="form-select" name="Actividad">
+                            <option selected disabled>Actividad</option>
+                            <option value="senderismo">Senderismo</option>
                             <option value="climbing">Climbing</option>
                             <option value="camping">Camping</option>
                             <option value="ski">Ski</option>
                         </select>
-                        <select name="Otros">
+
+                        <select class="form-select" name="Otros">
+                            <option selected disabled>Otros</option>
                             <option value="ofertas">Ofertas</option>
                             <option value="novedades">Novedades</option>
                         </select>
@@ -98,7 +99,7 @@
             <!--END FILTRO-->
 
             <!--PRODUCTOS-->
-            <div class="col-12 col-md-6 col-lg-3 ms-auto">
+            <div class="col-12 col-md-6 col-lg-3">
                 <figure>
                     <img src="#" alt="Buzo Micropolar">
                     <figcaption>Buzo Micropolar</figcaption>
@@ -106,7 +107,7 @@
                     <button>+ Agregar al carrito</button>
                 </figure>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 ms-auto">
+            <div class="col-12 col-md-6 col-lg-3">
                 <figure>
                     <img src="#" alt="Campera Softshell">
                     <figcaption>Campera Softshell</figcaption>
@@ -114,7 +115,7 @@
                     <button>+ Agregar al carrito</button>
                 </figure>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 ms-auto">
+            <div class="col-12 col-md-6 col-lg-3">
                 <figure>
                     <img src="#" alt="Botas Senderismo">
                     <figcaption>Botas Senderismo</figcaption>
@@ -122,7 +123,7 @@
                     <button>+ Agregar al carrito</button>
                 </figure>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 ms-auto">
+            <div class="col-12 col-md-6 col-lg-3">
                 <figure>
                     <img src="#" alt="Carpa 4 estaciones">
                     <figcaption>Carpa 4 estaciones</figcaption>
@@ -130,7 +131,7 @@
                     <button>+ Agregar al carrito</button>
                 </figure> 
             </div>
-            <div class="col-12 col-md-6 col-lg-3 -auto">
+            <div class="col-12 col-md-6 col-lg-3">
                 <figure>
                     <img src="#" alt="Crampones">
                     <figcaption>Crampones</figcaption>
@@ -138,7 +139,7 @@
                     <button>+ Agregar al carrito</button>
                 </figure>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 -auto">
+            <div class="col-12 col-md-6 col-lg-3">
                 <figure>
                     <img src="#" alt="Remera Secado Rapido">
                     <figcaption>Remera Secado Rapido</figcaption>

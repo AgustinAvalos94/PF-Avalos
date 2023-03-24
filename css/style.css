@@ -204,17 +204,6 @@ ul li img{
     } 
 
     .tienda{
-        display: grid;
-        width: 90%;
-        min-height: 1000px;
-        margin: auto;
-        gap: 1em;
-        grid-template-columns:15% repeat(3, 1fr);
-        grid-template-rows: 5% repeat(2, 45%);
-        grid-template-areas:
-        "actions actions actions actions"
-        "filtro pro_1 pro_2 pro_3"
-        "0 pro_4 pro_5 pro_6";
         background-color: blue;
         
     }
@@ -224,37 +213,13 @@ ul li img{
         background-color: brown;
     }
         .tienda .filtro form{
-            display: flex;
-            flex-direction: column;
     
         }
     
     .tienda .actions{
-        grid-area: actions;
-        display: flex;
-        flex-direction: row-reverse;
+       
     }
-    
-    
-    .producto_1{
-        grid-area: pro_1;
-    }
-    .producto_2{
-        grid-area: pro_2;
-    }
-    .producto_3{
-        grid-area: pro_3;
-    }
-    .producto_4{
-        grid-area: pro_4;
-    }
-    .producto_5{
-        grid-area: pro_5;
-    }
-    .producto_6{
-        grid-area: pro_6;
-    }
-    
+        
         .tienda figure{
             background-color: brown;
             width: 100%;
