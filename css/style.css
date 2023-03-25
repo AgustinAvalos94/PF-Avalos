@@ -203,8 +203,22 @@ ul li img{
 
     } 
 
-   
-        
+   .actions button{
+    border-radius:0.25em;
+    background-color: rgba(178, 187, 204, 0.664);
+   }
+
+   .actions input{
+    border-radius: 0.25em;
+    font-family: 'Roboto';
+    font-size: 1em;
+   }
+
+.filtro button{
+    background-color: rgba(7, 40, 129, 0.781);
+    font-family: 'Roboto', sans-serif;
+}
+    
         .tienda figure{
             
             width: 100%;
@@ -305,7 +319,7 @@ ul li img{
     
     .landing .hiking{
         grid-area: hiking;
-        background-color: brown;
+        background-color: rgba(7, 40, 129, 0.781);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -313,7 +327,7 @@ ul li img{
     
     .landing .climbing{
         grid-area: climbing;
-        background-color: brown;
+        background-color: rgba(7, 40, 129, 0.781);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -321,7 +335,7 @@ ul li img{
     
     .landing .camping{
         grid-area: camping;
-        background-color: brown;
+        background-color: rgba(7, 40, 129, 0.781);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -329,7 +343,7 @@ ul li img{
     
     .landing .ski{
         grid-area: ski;
-        background-color: brown;
+        background-color: rgba(7, 40, 129, 0.781);
         display: flex;
         justify-content: center;
         align-items: center;
