@@ -273,7 +273,7 @@ ul li img{
     .landing{
         padding-top: 10px;
         display: grid;
-        width: 70%;
+        width: 90%;
         height: 800px;
         margin: auto;
         grid-template-columns: repeat(2, 25%) 50%;
@@ -283,14 +283,28 @@ ul li img{
         "hiking climbing novedades"
         "camping ski novedades ";
         gap: 5px;
-    
+    }
+
+    @media (max-width: 992px){
+        .landing{
+        padding-top: 10px;
+        display: grid;
+        width: 90%;
+        margin: auto;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas: 
+        "ofertas ofertas"
+        "hombre mujer"
+        "novedades novedades"
+        "hiking climbing"
+        "camping ski";
+        gap: 5px;
+        }
     }
         .landing a{
             font-size: 2em;
             
-        }
-        .landing div{
-            /*me gustaría una tira gris con alfa 0.45, que se extienda desde ambos lados*/
         }
     
     .landing .hombre{
