@@ -23,6 +23,7 @@ p{
     font-size: 1em;
 }
 
+
 header{
     background-image: url(../img/header.jpg);
     height:320px;
@@ -67,6 +68,110 @@ nav{
 
 /*BOX model - witdth- height- margin - padding - border*/
 
+    /*GRID DE LANDING*/
+    
+    .grid-landing{
+        padding-top: 10px;
+        display: grid;
+        width: 90%;
+        margin: auto;
+        grid-template-columns: repeat(2, 25%) 50%;
+        grid-template-rows: 55% repeat(2, 1fr);
+        grid-template-areas: 
+        "hombre mujer ofertas"
+        "hiking climbing novedades"
+        "camping ski novedades ";
+        gap: 5px;
+    }
+
+    @media (max-width: 992px){
+        .grid-landing{
+        padding-top: 10px;
+        display: grid;
+        width: 90%;
+        height: fit-content;
+        margin: auto;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas: 
+        "ofertas ofertas"
+        "hombre mujer"
+        "novedades novedades"
+        "hiking climbing"
+        "camping ski";
+        gap: 5px;
+        }
+
+       
+    }
+       
+    
+    .grid-landing .hombre{
+        grid-area: hombre;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .grid-landing .mujer{
+        grid-area: mujer;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .grid-landing .ofertas{
+        grid-area: ofertas;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .grid-landing .hiking{
+        grid-area: hiking;
+        background-color: rgba(7, 40, 129, 0.781);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .grid-landing .climbing{
+        grid-area: climbing;
+        background-color: rgba(7, 40, 129, 0.781);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .grid-landing .camping{
+        grid-area: camping;
+        background-color: rgba(7, 40, 129, 0.781);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .grid-landing .ski{
+        grid-area: ski;
+        background-color: rgba(7, 40, 129, 0.781);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .grid-landing .novedades{
+        grid-area: novedades;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
 .contenedor_landing{
    position: relative;
 }
@@ -81,14 +186,20 @@ nav{
     .contenedor_landing a{
             position: absolute;
             bottom: auto;
-            width: 50%;
+            width: 70%;
             color: rgb(255, 255, 255);
             text-shadow: grey;
             background-color: rgba(126, 122, 122, 0.319);
-            font-size: 20px;
-            padding: 20px;
+            font-size: 2em;
+            padding: 20px 0 20px 0;
             text-align: center;
     }
+
+    @media (max-width: 992px){
+        .contenedor_landing a{
+            fontsize: 1em;
+        }
+        }
 
 .logo {
     height:100px;
@@ -96,12 +207,7 @@ nav{
     padding: 10px;
 }
 
-.contenedor_prueba{
-    width: 70%;
-    margin: auto;
-    padding: 10px 0px 10px 0px;
-    background-color: rgba(207, 202, 202, 0.514);
-}
+
 
 #lista-hor{
     
@@ -277,109 +383,5 @@ ul li img{
             }
     
     
-    /*GRIDS DE LANDING Y TIENDA*/
-    
-    .landing{
-        padding-top: 10px;
-        display: grid;
-        width: 90%;
-        height: auto;
-        margin: auto;
-        grid-template-columns: repeat(2, 25%) 50%;
-        grid-template-rows: 60% repeat(2, 1fr);
-        grid-template-areas: 
-        "hombre mujer ofertas"
-        "hiking climbing novedades"
-        "camping ski novedades ";
-        gap: 5px;
-    }
-
-    @media (max-width: 992px){
-        .landing{
-        padding-top: 10px;
-        display: grid;
-        width: 90%;
-        height: fit-content;
-        margin: auto;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(5,auto);
-        grid-template-areas: 
-        "ofertas ofertas"
-        "hombre mujer"
-        "novedades novedades"
-        "hiking climbing"
-        "camping ski";
-        gap: 5px;
-        }
-    }
-        .landing a{
-            font-size: 2em;
-            
-        }
-    
-    .landing .hombre{
-        grid-area: hombre;
-       
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .landing .mujer{
-        grid-area: mujer;
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .landing .ofertas{
-        grid-area: ofertas;
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .landing .hiking{
-        grid-area: hiking;
-        background-color: rgba(7, 40, 129, 0.781);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .landing .climbing{
-        grid-area: climbing;
-        background-color: rgba(7, 40, 129, 0.781);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .landing .camping{
-        grid-area: camping;
-        background-color: rgba(7, 40, 129, 0.781);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .landing .ski{
-        grid-area: ski;
-        background-color: rgba(7, 40, 129, 0.781);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .landing .novedades{
-        grid-area: novedades;
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
 
 
