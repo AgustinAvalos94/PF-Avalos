@@ -74,7 +74,7 @@ nav{
         padding-top: 10px;
         display: grid;
         width: 90%;
-        margin: auto;
+        margin: 10px auto;
         grid-template-columns: repeat(2, 25%) 50%;
         grid-template-rows: 55% repeat(2, 1fr);
         grid-template-areas: 
@@ -371,8 +371,8 @@ ul li img{
                 margin-top: 10px;
                 margin-bottom: 20px;
                 border: none;
-                border-radius: 1em;
-                background-color: steelblue;
+                border-radius: 0.2em;
+                background-color: rgba(7, 40, 129, 0.781);
                 color: white;
             }
     
