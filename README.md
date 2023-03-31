@@ -1,2 +1,2 @@
-# curso_DesarrolloWeb
+# PreEntrega2-AVALOS
 Proyecto Coderhouse
