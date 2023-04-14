@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 /*Selectores de etiqueta*/
-
+main {
+    width: 90%;
+}
 h1,h2,h3,a{
     font-family:'Roboto', sans-serif;
     text-shadow: 2px 2px rgb(126, 122, 122);
@@ -53,7 +55,7 @@ nav{
         }
     
         nav ul li a:hover{/*los vinculos hijos de los elementos de lista hijos de la lista de... */
-            color: steelblue;
+            color: rgba(234, 234, 234, 0.499);
             text-decoration: none;
             
         }
@@ -73,7 +75,6 @@ nav{
     .grid-landing{
         padding-top: 10px;
         display: grid;
-        width: 90%;
         margin: 10px auto;
         grid-template-columns: repeat(2, 25%) 50%;
         grid-template-rows: 55% repeat(2, 1fr);
@@ -298,6 +299,10 @@ nav{
         
         }
 
+.tec {
+    width: 90%;
+    margin:auto;
+}
 .tec ul{
     display: flex;
     flex-direction: column;
@@ -316,20 +321,27 @@ nav{
     }
         .tec ul li img{
             width: 25%;
+            padding:20px;
         }
         .tec ul li p{
             width: 50%;
+            padding: 20px;
         }
-       
+    .tec article{
+        display: flex;
+        flex-direction: row;
+        text-align: justify;
+        justify-content: start;
+    }   
 
 
 .nosotros{
       text-align: center;
-      width: 90%;
+      
       margin: auto;
 }
     .nosotros p{
-        width: 80%;
+        width: 70%;
         margin: auto;
         padding: 30px;
         text-align: justify;
@@ -343,13 +355,14 @@ nav{
     .nosotros div{
         display: flex;
         flex-direction: row;
-        width: 80%;
+        width: 70%;
         margin: auto;
-        align-content: right;
         text-align: left;
     }
         .nosotros div p{
             width: auto;
+            margin:0;
+            padding: 10px;
             
         }
         .nosotros div img{
@@ -424,6 +437,7 @@ nav{
 
 .tienda{
     background-image: url(../img/fondo-tienda.jpg);
+    width: 90%;
     
 }
     
@@ -435,8 +449,8 @@ nav{
             flex-direction: column;
             justify-content: center;
             text-align: justify;
-            border: solid 1px grey;
-            border-radius: 0.5em;
+            border: none;
+            border-radius: 0;
             align-self: center;
             background-color: rgba(255, 255, 255, 0.451);
         }

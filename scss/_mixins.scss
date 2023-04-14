@@ -1,0 +1,31 @@
+@mixin grid_div{
+    height: fit-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin flex-row-center{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin flex-row-saround{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+@mixin flex-column-center{
+    display: flex;
+	margin: auto;
+	flex-direction: column;
+	justify-content: center;
+	text-align: justify;
+	align-self: center;
+}

@@ -1,0 +1,51 @@
+@media (max-width: 992px) {
+	.grid-landing {
+		padding-top: 10px;
+		display: grid;
+		width: 90%;
+		height: fit-content;
+		margin: auto;
+		grid-template-columns: repeat(2,1fr);
+		grid-template-rows: repeat(5,auto);
+		grid-template-areas: "ofertas ofertas" "hombre mujer" "novedades novedades" "hiking climbing" "camping ski";
+		gap: 5px;
+	}
+	.contenedor_landing {
+		a {
+			font-size: $fontsize_md;
+		}
+	}
+	#lista-hor {
+		h3 {
+			font-size: $fontsize_md;
+		}
+		ul {
+			width: 65%;
+			li {
+				width: 20%;
+			}
+		}
+	}
+	footer {
+		div {
+			width: 15%;
+		}
+		h3 {
+			font-size: $fontsize_md;
+		}
+	}
+}
+@media (max-width:992px) {
+	.nosotros {
+		h1 {
+			font-size: $fontsize_xl;
+		}
+		width: 100%;
+	}
+	.formulario {
+		width: 90%;
+	}
+	h1 {
+		font-size: $fontsize_lg;
+	}
+}

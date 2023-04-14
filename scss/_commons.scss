@@ -1,0 +1,44 @@
+h1 {
+	font-family: $fontFamily;
+	text-shadow: $textShadow;
+	padding: 0;
+	margin-top: 10px;
+	font-size: $fontsize_xl;
+	padding: 30px 0px 20px 40px;
+}
+h2 {
+	font-family: $fontFamily;
+	text-shadow: $textShadow;
+	padding: 0;
+	margin-top: 10px;
+	font-size: $fontsize_lg;
+}
+h3 {
+	font-family: $fontFamily;
+	text-shadow: $textShadow;
+	padding: 0;
+	margin-top: 10px;
+}
+a {
+	font-family: $fontFamily;
+	text-shadow: $textShadow;
+	padding: 0;
+	margin-top: 10px;
+}
+p {
+	font-size: $fontsize_sm;
+}
+header {
+	background-image: url(../img/header.jpg);
+	height: 320px;
+}
+
+ul, li{
+    list-style: none;
+}
+
+.logo {
+	height: 100px;
+	width: auto;
+	padding: 10px;
+}

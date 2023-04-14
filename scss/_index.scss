@@ -1,0 +1,85 @@
+.grid-landing {
+	padding-top: 10px;
+	display: grid;
+	width: 90%;
+	margin: 10px auto;
+	grid-template-columns: repeat(2, 25%) 50%;
+	grid-template-rows: 55% repeat(2, 1fr);
+	grid-template-areas: "hombre mujer ofertas" "hiking climbing novedades" "camping ski novedades ";
+	gap: 5px;
+	.hombre {
+		grid-area: hombre;
+		@include grid_div;
+	}
+	.mujer {
+		grid-area: mujer;
+		@include grid_div;
+	}
+	.ofertas {
+		grid-area: ofertas;
+		@include grid_div;
+	}
+	.hiking {
+		grid-area: hiking;
+		@include grid_div;
+	}
+	.climbing {
+		grid-area: climbing;
+		@include grid_div;
+	}
+	.camping {
+		grid-area: camping;
+		@include grid_div;
+	}
+	.ski {
+		grid-area: ski;
+		@include grid_div;
+	}
+	.novedades {
+		grid-area: novedades;
+		@include grid_div;
+	}
+}
+
+.contenedor_landing {
+	position: relative;
+	img {
+		width: 100%;
+		height: auto;
+	}
+	a {
+		position: absolute;
+		bottom: auto;
+		width: 70%;
+		color: $keyColor_1;
+		text-shadow: $textShadow;
+		background-color: $secondaryColor;
+		font-size: $fontsize_lg;
+		padding: 20px 0 20px 0;
+		text-align: center;
+		&:hover{
+			background-color: $altColor;
+			color: $keyColor_3;
+		}
+	}
+}
+
+#lista-hor {
+	margin: 20px auto;
+	border-bottom: solid 1px gray;
+	border-top: solid 1px gray;
+	background-color: $background-color_3;
+	@include flex-row-center;
+	ul {
+		width: 60%;
+        @include flex-row-saround;
+		
+		li {
+			width: 15%;
+			img {
+				width: 100%;
+				padding: 10px;
+			}
+		}
+	}
+}

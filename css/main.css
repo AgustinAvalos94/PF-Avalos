@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+h1 {
+  font-family: "Roboto", sans-serif;
+  text-shadow: 4px 4px 2px rgba(174, 171, 171, 0.75);
+  padding: 0;
+  margin-top: 10px;
+  font-size: 3em;
+  padding: 30px 0px 20px 40px;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  text-shadow: 4px 4px 2px rgba(174, 171, 171, 0.75);
+  padding: 0;
+  margin-top: 10px;
+  font-size: 2em;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  text-shadow: 4px 4px 2px rgba(174, 171, 171, 0.75);
+  padding: 0;
+  margin-top: 10px;
+}
+
+a {
+  font-family: "Roboto", sans-serif;
+  text-shadow: 4px 4px 2px rgba(174, 171, 171, 0.75);
+  padding: 0;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 0.75em;
+}
+
+header {
+  background-image: url(../img/header.jpg);
+  height: 320px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  padding: 10px;
+}
+
+nav {
+  background-color: rgba(7, 40, 129, 0.781);
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li {
+  border: none;
+  padding: 10px 20px 10px 20px;
+  display: inline-block;
+  text-decoration: none;
+}
+nav ul li a {
+  display: inline-block;
+  position: relative;
+  color: whitesmoke;
+  text-decoration: none;
+}
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: whitesmoke;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+nav ul li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  height: 100px;
+  border-bottom: solid 1px gray;
+  border-top: solid 1px gray;
+  background-color: rgba(126, 122, 122, 0.319);
+}
+footer div {
+  width: 10%;
+  margin-left: 50px;
+}
+footer svg {
+  width: 40%;
+}
+
+.actions button {
+  border-radius: 0.25em;
+  background-color: whitesmoke;
+}
+.actions input {
+  border-radius: 0.25em;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25em;
+}
+
+.filtro button {
+  background-color: rgba(7, 40, 129, 0.781);
+  font-family: "Roboto", sans-serif;
+}
+
+.tienda {
+  background-image: url(../img/fondo-tienda.jpg);
+  width: 90%;
+}
+.tienda figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  align-self: center;
+  background-color: rgba(229, 230, 233, 0.482);
+}
+.tienda figure img {
+  border: none;
+  width: 70%;
+  margin: 20px auto;
+}
+.tienda figure p {
+  width: 80%;
+  margin: 5px auto;
+  font-size: 0.75em;
+}
+.tienda figure button {
+  width: 60%;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25em;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 0.2em;
+  background-color: rgba(7, 40, 129, 0.781);
+  color: whitesmoke;
+}
+.tienda figure figcaption {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 1.25em;
+}
+
+.grid-landing {
+  padding-top: 10px;
+  display: grid;
+  width: 90%;
+  margin: 10px auto;
+  grid-template-columns: repeat(2, 25%) 50%;
+  grid-template-rows: 55% repeat(2, 1fr);
+  grid-template-areas: "hombre mujer ofertas" "hiking climbing novedades" "camping ski novedades ";
+  gap: 5px;
+}
+.grid-landing .hombre {
+  grid-area: hombre;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-landing .mujer {
+  grid-area: mujer;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-landing .ofertas {
+  grid-area: ofertas;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-landing .hiking {
+  grid-area: hiking;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-landing .climbing {
+  grid-area: climbing;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-landing .camping {
+  grid-area: camping;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-landing .ski {
+  grid-area: ski;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-landing .novedades {
+  grid-area: novedades;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor_landing {
+  position: relative;
+}
+.contenedor_landing img {
+  width: 100%;
+  height: auto;
+}
+.contenedor_landing a {
+  position: absolute;
+  bottom: auto;
+  width: 70%;
+  color: whitesmoke;
+  text-shadow: 4px 4px 2px rgba(174, 171, 171, 0.75);
+  background-color: rgba(126, 122, 122, 0.319);
+  font-size: 2em;
+  padding: 20px 0 20px 0;
+  text-align: center;
+}
+.contenedor_landing a:hover {
+  background-color: rgba(229, 230, 233, 0.482);
+  color: black;
+}
+
+#lista-hor {
+  margin: 20px auto;
+  border-bottom: solid 1px gray;
+  border-top: solid 1px gray;
+  background-color: rgba(175, 171, 171, 0.493);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+#lista-hor ul {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+#lista-hor ul li {
+  width: 15%;
+}
+#lista-hor ul li img {
+  width: 100%;
+  padding: 10px;
+}
+
+.tec {
+  width: 90%;
+  margin: auto;
+}
+.tec ul {
+  display: flex;
+  flex-direction: column;
+}
+.tec ul li {
+  list-style: none;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.tec ul li h2 {
+  width: 100%;
+}
+.tec ul li img {
+  width: 25%;
+  padding: 20px;
+}
+.tec ul li p {
+  width: 50%;
+  padding: 20px;
+}
+.tec article {
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+  justify-content: start;
+}
+
+.formulario {
+  margin: 30px 0px 40px 40px;
+  width: 70%;
+  font-size: 1.25em;
+  font-family: "Roboto", sans-serif;
+}
+.formulario div {
+  margin: 10px 0 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.formulario div input {
+  width: 40%;
+  color: black;
+  background-color: whitesmoke;
+  border: solid 1px 4px black;
+}
+.formulario input {
+  padding: 10px 20px 10px 20px;
+  border: none;
+  background-color: rgba(7, 40, 129, 0.781);
+  font-size: 1.25em;
+  color: whitesmoke;
+}
+
+.nosotros {
+  text-align: center;
+  margin: auto;
+}
+.nosotros p {
+  width: 70%;
+  margin: auto;
+  padding: 30px;
+  text-align: justify;
+  font-size: 1.25em;
+}
+.nosotros img {
+  width: 70%;
+  height: auto;
+  padding: 20px;
+}
+.nosotros div {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin: auto;
+  text-align: left;
+}
+.nosotros div p {
+  width: auto;
+  margin: 0;
+  padding: 10px;
+}
+.nosotros div img {
+  width: 40%;
+}
+
+@media (max-width: 992px) {
+  .grid-landing {
+    padding-top: 10px;
+    display: grid;
+    width: 90%;
+    height: fit-content;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "ofertas ofertas" "hombre mujer" "novedades novedades" "hiking climbing" "camping ski";
+    gap: 5px;
+  }
+  .contenedor_landing a {
+    font-size: 1.25em;
+  }
+  #lista-hor h3 {
+    font-size: 1.25em;
+  }
+  #lista-hor ul {
+    width: 65%;
+  }
+  #lista-hor ul li {
+    width: 20%;
+  }
+  footer div {
+    width: 15%;
+  }
+  footer h3 {
+    font-size: 1.25em;
+  }
+}
+@media (max-width: 992px) {
+  .nosotros {
+    width: 100%;
+  }
+  .nosotros h1 {
+    font-size: 3em;
+  }
+  .formulario {
+    width: 90%;
+  }
+  h1 {
+    font-size: 2em;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

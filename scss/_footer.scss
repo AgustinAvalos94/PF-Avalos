@@ -1,0 +1,15 @@
+footer {
+	@include flex-row-center;
+	margin: 20px auto;
+	height: 100px;
+	border-bottom: $border_1;
+	border-top: $border_1;
+	background-color: $secondaryColor;
+	div {
+		width: 10%;
+		margin-left: 50px;
+	}
+	svg {
+		width: 40%;
+	}
+}
