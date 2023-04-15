@@ -59,7 +59,7 @@
 		text-align: center;
 		&:hover{
 			background-color: $altColor;
-			color: $keyColor_3;
+			color: $primaryColor;
 		}
 	}
 }
@@ -71,14 +71,16 @@
 	background-color: $background-color_3;
 	@include flex-row-center;
 	ul {
-		width: 60%;
-        @include flex-row-saround;
+		padding-top:10px;
+		padding-left: 0;
+		width: 50%;
+        @include flex-row-evenly;
 		
 		li {
-			width: 15%;
+			width: fit-content;
 			img {
-				width: 100%;
-				padding: 10px;
+				width: 70px;
+				padding: 0;
 			}
 		}
 	}

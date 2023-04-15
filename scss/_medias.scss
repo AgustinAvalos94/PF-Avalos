@@ -1,4 +1,13 @@
 @media (max-width: 992px) {
+	h1{
+		font-size: $fontsize_lg;
+	}
+	h2{
+		font-size: $fontsize_md;
+	}
+	h3{
+		font-size: $fontsize_sm;
+	}
 	.grid-landing {
 		padding-top: 10px;
 		display: grid;
@@ -15,10 +24,25 @@
 			font-size: $fontsize_md;
 		}
 	}
-	#lista-hor {
-		h3 {
-			font-size: $fontsize_md;
+	.tienda {
+		background-image: url(../img/fondo-tienda.jpg);
+		width:90%;
+		margin-bottom: 20px;
+		padding-bottom: 10px;
+		figure {
+			p {
+				font-size: $fontsize_xs;
+			}
+			button {
+				font-size: $fontsize_sm;
+			}
+			figcaption {
+				font-size: $fontsize_sm;
+			}
 		}
+	}
+
+	#lista-hor {
 		ul {
 			width: 65%;
 			li {
@@ -27,25 +51,112 @@
 		}
 	}
 	footer {
+		
+		section{
+			width:80%;
+		}
 		div {
 			width: 15%;
-		}
-		h3 {
-			font-size: $fontsize_md;
+			img{
+				width: 20px;
+			}
 		}
 	}
-}
-@media (max-width:992px) {
 	.nosotros {
-		h1 {
-			font-size: $fontsize_xl;
-		}
+		
 		width: 100%;
 	}
 	.formulario {
 		width: 90%;
 	}
-	h1 {
-		font-size: $fontsize_lg;
+}
+
+@media (max-width:768px){
+	h1{
+		font-size: $fontsize_md;
 	}
+	h2{
+		font-size: $fontsize_sm;
+	}
+	p{
+		font-size: $fontsize_xs;
+	}
+
+	.tec {
+		ul {
+			li {
+				img {
+					width: 40%;
+				}
+			}
+		}
+	}
+}
+
+
+
+@media (max-width:425px){
+	h1{
+		font-size: $fontsize_sm;
+	}
+	h2{
+		font-size: $fontsize_xs;
+	}
+
+	h3{
+		font-size: $fontsize_xs;
+	}
+
+	header{
+		height: 150px;
+	}
+
+	footer{
+		section{
+			width:95%;
+		}
+		svg{
+			width:30px;
+		}
+	}
+
+	.grid-landing{
+		grid-template-columns: repeat(2,1fr);
+		grid-template-rows: repeat(7,auto);
+		grid-template-areas: "ofertas ofertas" "hombre mujer" "novedades novedades" "hiking hiking" "climbing climbing" "camping camping" "ski ski";
+	}
+
+	#lista-hor {
+		flex-direction: column;
+		ul {
+			width: 90%;
+			li {
+				img{
+				
+				}
+			}
+		}
+	}
+
+	.tec {
+		flex-direction: column;
+		ul {
+			flex-direction: column;
+			li {
+				flex-direction: column;
+				article{
+					flex-direction: column;
+					img{
+						width: 80%;
+						margin:auto;
+					}
+					p{
+						font-size: $fontsize_xxs;
+					}
+				}
+			}
+		}
+	}
+
+	
 }
