@@ -1,10 +1,5 @@
 footer {
-	margin: 20px auto;
-	height: 100px;
-	border-bottom: $border_1;
-	border-top: $border_1;
-	background-color: $secondaryColor;
-	@include flex-column-center;
+	@extend .lista-hor;
 	section{
 		@include flex-row-evenly;
 		width:60%;

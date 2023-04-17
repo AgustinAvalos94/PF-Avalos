@@ -5,6 +5,8 @@
 	align-items: center;
 }
 
+
+
 @mixin flex-row-center{
     display: flex;
 	flex-direction: row;
@@ -25,7 +27,7 @@
     display: flex;
 	margin: auto;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
 	text-align: justify;
 	align-self: center;
 }

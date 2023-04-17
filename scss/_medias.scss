@@ -42,7 +42,7 @@
 		}
 	}
 
-	#lista-hor {
+	.lista-hor {
 		ul {
 			width: 65%;
 			li {
@@ -160,7 +160,7 @@
 		grid-template-areas: "ofertas ofertas" "hombre mujer" "novedades novedades" "hiking hiking" "climbing climbing" "camping camping" "ski ski";
 	}
 
-	#lista-hor {
+	.lista-hor {
 		flex-direction: column;
 		ul {
 			width: 90%;

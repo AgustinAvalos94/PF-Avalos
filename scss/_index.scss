@@ -66,12 +66,13 @@
 	}
 }
 
+
 //SELECTOR PARA LISTADO DE MARCAS
-#lista-hor {
+.lista-hor {
 	margin: 20px auto;
-	border-bottom: solid 1px gray;
-	border-top: solid 1px gray;
-	background-color: $background-color_3;
+	border-bottom: $border_1;
+	border-top: $border_1;
+	background-color: $secondaryColor;
 	@include flex-row-center;
 	ul {
 		padding-top:10px;
