@@ -85,9 +85,42 @@
 	.tec {
 		ul {
 			li {
-				img {
-					width: 40%;
+				article{
+					img {
+						width: 40%;
+						height: auto;					
+					}
+					p{
+						font-size: $fontsize_xxs;
+					}
 				}
+				
+			}
+		}
+	}
+
+	.formulario{
+		label,input{
+			font-size: $fontsize_xs;
+		}
+		div{
+			input {
+				width: 50%;
+			}
+		}
+	}
+
+	.nosotros{
+		p,img{
+			font-size: $fontsize_xs;
+			width: 90%;
+			padding: 10px 0 10px 0;
+		}
+		div{
+			width: 90%;
+			flex-direction: column;
+			img,p{
+				width: 100%;
 			}
 		}
 	}
@@ -106,6 +139,7 @@
 	h3{
 		font-size: $fontsize_xs;
 	}
+
 
 	header{
 		height: 150px;
@@ -154,6 +188,37 @@
 						font-size: $fontsize_xxs;
 					}
 				}
+			}
+		}
+	}
+
+	.formulario{
+		label,input{
+			font-size: $fontsize_xs;
+		}
+		
+		div{
+			display: flex;
+			flex-direction: column;
+			width: 90%;
+			
+			input {
+				width: 100%;
+			}
+		}
+	}
+
+	.nosotros{
+		p,img{
+			font-size: $fontsize_xxs;
+			width: 90%;
+			padding: 10px 0 10px 0;
+		}
+		div{
+			width: 90%;
+			flex-direction: column;
+			img,p{
+				width: 100%;
 			}
 		}
 	}

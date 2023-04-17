@@ -18,13 +18,21 @@
 			h2 {
 				width: 100%;
 			}
-			img {
-				width: 25%;
-				padding: 20px;
+			article{
+				display: flex;
+				flex-direction: row;
+				align-items: start;
+				img {
+					width: 20%;
+					height: auto;
+					padding: 20px;
+				}
+				p {
+					font-size: $fontsize_xs;
+					padding: 20px;
+				}
 			}
-			p {
-				padding: 20px;
-			}
+			
 		}
 	}
 	article {
@@ -75,7 +83,7 @@
 		margin: auto;
 		padding: 30px;
 		text-align: justify;
-        font-size: $fontsize_md;
+        font-size: $fontsize_xs;
 	}
 	img {
 		width: 70%;
@@ -95,6 +103,7 @@
 		}
 		img {
 			width: 40%;
+			height: auto;
 		}
 	}
 }

@@ -263,7 +263,7 @@ footer svg {
   bottom: auto;
   width: 70%;
   color: whitesmoke;
-  text-shadow: 4px 4px 2px rgba(174, 171, 171, 0.75);
+  text-shadow: none;
   background-color: rgba(126, 122, 122, 0.319);
   font-size: 2.3em;
   padding: 20px 0 20px 0;
@@ -322,11 +322,18 @@ footer svg {
 .tec ul li h2 {
   width: 100%;
 }
-.tec ul li img {
-  width: 25%;
+.tec ul li article {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+.tec ul li article img {
+  width: 20%;
+  height: auto;
   padding: 20px;
 }
-.tec ul li p {
+.tec ul li article p {
+  font-size: 0.85em;
   padding: 20px;
 }
 .tec article {
@@ -371,7 +378,7 @@ footer svg {
   margin: auto;
   padding: 30px;
   text-align: justify;
-  font-size: 1.65em;
+  font-size: 0.85em;
 }
 .nosotros img {
   width: 70%;
@@ -392,6 +399,7 @@ footer svg {
 }
 .nosotros div img {
   width: 40%;
+  height: auto;
 }
 
 @media (max-width: 992px) {
@@ -465,8 +473,30 @@ footer svg {
   p {
     font-size: 0.85em;
   }
-  .tec ul li img {
+  .tec ul li article img {
     width: 40%;
+    height: auto;
+  }
+  .tec ul li article p {
+    font-size: 0.65em;
+  }
+  .formulario label, .formulario input {
+    font-size: 0.85em;
+  }
+  .formulario div input {
+    width: 50%;
+  }
+  .nosotros p, .nosotros img {
+    font-size: 0.85em;
+    width: 90%;
+    padding: 10px 0 10px 0;
+  }
+  .nosotros div {
+    width: 90%;
+    flex-direction: column;
+  }
+  .nosotros div img, .nosotros div p {
+    width: 100%;
   }
 }
 @media (max-width: 425px) {
@@ -517,6 +547,29 @@ footer svg {
   }
   .tec ul li article p {
     font-size: 0.65em;
+  }
+  .formulario label, .formulario input {
+    font-size: 0.85em;
+  }
+  .formulario div {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .formulario div input {
+    width: 100%;
+  }
+  .nosotros p, .nosotros img {
+    font-size: 0.65em;
+    width: 90%;
+    padding: 10px 0 10px 0;
+  }
+  .nosotros div {
+    width: 90%;
+    flex-direction: column;
+  }
+  .nosotros div img, .nosotros div p {
+    width: 100%;
   }
 }
 
