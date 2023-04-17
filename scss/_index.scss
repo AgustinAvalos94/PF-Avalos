@@ -1,3 +1,4 @@
+//GRILLA DEL INDEX
 .grid-landing {
 	padding-top: 10px;
 	display: grid;
@@ -41,6 +42,7 @@
 	}
 }
 
+//CONTENEDORES DENTRO DE LA GRILLA
 .contenedor_landing {
 	position: relative;
 	img {
@@ -64,6 +66,7 @@
 	}
 }
 
+//SELECTOR PARA LISTADO DE MARCAS
 #lista-hor {
 	margin: 20px auto;
 	border-bottom: solid 1px gray;
