@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap");
 h1 {
   font-family: "Roboto", sans-serif;
   text-shadow: 4px 4px 2px rgba(174, 171, 171, 0.75);
   padding: 0;
   margin-top: 10px;
   font-size: 3em;
+  font-style: normal;
   padding: 30px 0px 20px 20px;
 }
 
@@ -27,12 +29,13 @@ h3 {
 a {
   font-family: "Roboto", sans-serif;
   text-shadow: 4px 4px 2px rgba(174, 171, 171, 0.75);
+  font-style: italic;
   padding: 0;
   margin-top: 10px;
 }
 
 p {
-  font-size: 1.25em;
+  font-size: 1.2em;
 }
 
 header {
@@ -173,21 +176,20 @@ nav ul li a:hover:after {
   width: 70%;
   color: whitesmoke;
   text-shadow: none;
-  background-color: rgba(126, 122, 122, 0.319);
+  background-color: rgba(126, 122, 122, 0.373);
   font-size: 2.3em;
   padding: 20px 0 20px 0;
   text-align: center;
 }
 .contenedor_landing a:hover {
-  background-color: rgba(229, 230, 233, 0.482);
+  background-color: rgba(229, 230, 233, 0.867);
   color: rgba(7, 40, 129, 0.781);
 }
 
 .lista-hor, footer {
   margin: 20px auto;
-  border-bottom: solid 1px gray;
-  border-top: solid 1px gray;
-  background-color: rgba(126, 122, 122, 0.319);
+  border: none;
+  background-color: whitesmoke;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -212,6 +214,9 @@ nav ul li a:hover:after {
   padding: 0;
 }
 
+footer {
+  height: 100px;
+}
 footer section {
   display: flex;
   flex-direction: row;
@@ -260,23 +265,31 @@ footer svg {
   justify-content: space-between;
   text-align: justify;
   align-self: center;
-  background-color: rgba(229, 230, 233, 0.482);
+  overflow: hidden;
+  background-color: rgba(229, 230, 233, 0.867);
 }
 .tienda figure img {
   border: none;
   width: 70%;
   margin: 20px auto;
 }
-.tienda figure p {
-  width: 80%;
+.tienda figure div {
+  display: -webkit-box;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+.tienda figure div p {
   margin: 5px auto;
-  font-size: 1.25em;
+  font-size: 1em;
 }
 .tienda figure button {
-  width: 60%;
+  width: 40%;
   margin: auto;
   font-family: "Roboto", sans-serif;
-  font-size: 1.65em;
+  font-size: 1em;
   margin-top: 10px;
   margin-bottom: 20px;
   border: none;
@@ -301,7 +314,6 @@ footer svg {
 }
 .tec ul li {
   list-style: none;
-  font-size: 1.5em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -320,7 +332,7 @@ footer svg {
   padding: 20px;
 }
 .tec ul li article p {
-  font-size: 0.85em;
+  font-size: 1.2em;
   padding: 20px;
 }
 .tec article {
@@ -333,6 +345,7 @@ footer svg {
 .formulario {
   margin: 30px 0px 40px 40px;
   width: 70%;
+  margin: auto;
   font-size: 1.65em;
   font-family: "Roboto", sans-serif;
 }
@@ -352,7 +365,7 @@ footer svg {
   padding: 10px 20px 10px 20px;
   border: solid 1px;
   background-color: rgba(7, 40, 129, 0.781);
-  font-size: 1.65em;
+  font-size: 1em;
   color: whitesmoke;
 }
 
@@ -365,7 +378,7 @@ footer svg {
   margin: auto;
   padding: 30px;
   text-align: justify;
-  font-size: 0.85em;
+  font-size: 1.2em;
 }
 .nosotros img {
   width: 70%;
@@ -397,7 +410,7 @@ footer svg {
     font-size: 1.65em;
   }
   h3 {
-    font-size: 1.25em;
+    font-size: 1.2em;
   }
   .grid-landing {
     padding-top: 10px;
@@ -420,13 +433,13 @@ footer svg {
     padding-bottom: 10px;
   }
   .tienda figure p {
-    font-size: 0.85em;
+    font-size: 1em;
   }
   .tienda figure button {
-    font-size: 1.25em;
+    width: 50%;
   }
   .tienda figure figcaption {
-    font-size: 1.25em;
+    font-size: 1.2em;
   }
   .lista-hor ul, footer ul {
     width: 65%;
@@ -452,13 +465,16 @@ footer svg {
 }
 @media (max-width: 768px) {
   h1 {
-    font-size: 1.65em;
+    font-size: 2.3em;
   }
   h2 {
-    font-size: 1.25em;
+    font-size: 1.65em;
   }
   p {
-    font-size: 0.85em;
+    font-size: 1em;
+  }
+  header {
+    height: 200px;
   }
   .tec ul li article img {
     width: 40%;
@@ -468,13 +484,13 @@ footer svg {
     font-size: 0.65em;
   }
   .formulario label, .formulario input {
-    font-size: 0.85em;
+    font-size: 1em;
   }
   .formulario div input {
     width: 50%;
   }
   .nosotros p, .nosotros img {
-    font-size: 0.85em;
+    font-size: 1em;
     width: 90%;
     padding: 10px 0 10px 0;
   }
@@ -485,16 +501,22 @@ footer svg {
   .nosotros div img, .nosotros div p {
     width: 100%;
   }
+  .lista-hor, footer {
+    flex-direction: column;
+  }
+  .lista-hor ul, footer ul {
+    width: 90%;
+  }
 }
 @media (max-width: 425px) {
   h1 {
-    font-size: 1.25em;
+    font-size: 1.2em;
   }
   h2 {
-    font-size: 0.85em;
+    font-size: 1em;
   }
   h3 {
-    font-size: 0.85em;
+    font-size: 1em;
   }
   header {
     height: 150px;
@@ -533,10 +555,10 @@ footer svg {
     margin: auto;
   }
   .tec ul li article p {
-    font-size: 0.65em;
+    font-size: 1em;
   }
   .formulario label, .formulario input {
-    font-size: 0.85em;
+    font-size: 1em;
   }
   .formulario div {
     display: flex;
@@ -547,7 +569,7 @@ footer svg {
     width: 100%;
   }
   .nosotros p, .nosotros img {
-    font-size: 0.65em;
+    font-size: 1em;
     width: 90%;
     padding: 10px 0 10px 0;
   }

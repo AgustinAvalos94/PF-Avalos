@@ -1,5 +1,6 @@
 footer {
 	@extend .lista-hor;
+	height: 100px;
 	section{
 		@include flex-row-evenly;
 		width:60%;

@@ -34,7 +34,7 @@
 				font-size: $fontsize_xs;
 			}
 			button {
-				font-size: $fontsize_sm;
+				width: 50%;
 			}
 			figcaption {
 				font-size: $fontsize_sm;
@@ -73,13 +73,17 @@
 
 @media (max-width:768px){
 	h1{
-		font-size: $fontsize_md;
+		font-size: $fontsize_lg;
 	}
 	h2{
-		font-size: $fontsize_sm;
+		font-size: $fontsize_md;
 	}
 	p{
 		font-size: $fontsize_xs;
+	}
+
+	header{
+		height: 200px;
 	}
 
 	.tec {
@@ -121,6 +125,17 @@
 			flex-direction: column;
 			img,p{
 				width: 100%;
+			}
+		}
+	}
+	.lista-hor {
+		flex-direction: column;
+		ul {
+			width: 90%;
+			li {
+				img{
+				
+				}
 			}
 		}
 	}
@@ -185,7 +200,7 @@
 						margin:auto;
 					}
 					p{
-						font-size: $fontsize_xxs;
+						font-size: $fontsize_xs;
 					}
 				}
 			}
@@ -210,7 +225,7 @@
 
 	.nosotros{
 		p,img{
-			font-size: $fontsize_xxs;
+			font-size: $fontsize_xs;
 			width: 90%;
 			padding: 10px 0 10px 0;
 		}

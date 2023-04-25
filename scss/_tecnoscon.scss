@@ -11,7 +11,6 @@
 		flex-direction: column;
 		li {
 			list-style: none;
-			font-size: 1.5em;
 			display: flex;
 			flex-direction: row;
 			flex-wrap: wrap;
@@ -28,7 +27,7 @@
 					padding: 20px;
 				}
 				p {
-					font-size: $fontsize_xs;
+					font-size: $fontsize_sm;
 					padding: 20px;
 				}
 			}
@@ -49,6 +48,7 @@
 .formulario {
 	margin: 30px 0px 40px 40px;
 	width: 70%;
+	margin: auto;
 	font-size: $fontsize_md;
 	font-family: $fontFamily;
 	div {
@@ -67,7 +67,7 @@
 		padding: 10px 20px 10px 20px;
 		border: solid 1px;
 		background-color: $primaryColor;
-		font-size: $fontsize_md;
+		font-size: $fontsize_xs;
 		color: $keyColor_1;
 	}
 }
@@ -83,7 +83,7 @@
 		margin: auto;
 		padding: 30px;
 		text-align: justify;
-        font-size: $fontsize_xs;
+        font-size: $fontsize_sm;
 	}
 	img {
 		width: 70%;

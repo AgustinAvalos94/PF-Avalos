@@ -4,6 +4,7 @@ h1 {
 	padding: 0;
 	margin-top: 10px;
 	font-size: $fontsize_xl;
+	font-style: normal;
 	padding: 30px 0px 20px 20px;
 }
 h2 {
@@ -23,6 +24,7 @@ h3 {
 a {
 	font-family: $fontFamily;
 	text-shadow: $textShadow;
+	font-style: italic;
 	padding: 0;
 	margin-top: 10px;
 }

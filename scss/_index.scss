@@ -70,9 +70,8 @@
 //SELECTOR PARA LISTADO DE MARCAS
 .lista-hor {
 	margin: 20px auto;
-	border-bottom: $border_1;
-	border-top: $border_1;
-	background-color: $secondaryColor;
+	border: none;
+	background-color: $keyColor_1;
 	@include flex-row-center;
 	ul {
 		padding-top:10px;
