@@ -209,7 +209,7 @@
 
 	.formulario{
 		label,input{
-			font-size: $fontsize_xs;
+			font-size: $fontsize_xxs;
 		}
 		
 		div{
@@ -218,7 +218,10 @@
 			width: 90%;
 			
 			input {
-				width: 100%;
+				width: 110%;
+			}
+			textarea{
+				width: 110%;
 			}
 		}
 	}
