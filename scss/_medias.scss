@@ -81,7 +81,6 @@
 	p{
 		font-size: $fontsize_xs;
 	}
-
 	header{
 		height: 200px;
 	}
@@ -128,6 +127,7 @@
 			}
 		}
 	}
+
 	.lista-hor {
 		flex-direction: column;
 		ul {
@@ -141,8 +141,6 @@
 	}
 }
 
-
-
 @media (max-width:425px){
 	h1{
 		font-size: $fontsize_sm;
@@ -154,12 +152,9 @@
 	h3{
 		font-size: $fontsize_xs;
 	}
-
-
 	header{
 		height: 150px;
 	}
-
 	footer{
 		section{
 			width:95%;
